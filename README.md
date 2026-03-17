@@ -39,31 +39,31 @@ OSC allows to sending a payload which can be either a string (text), int, float 
 
 ```shell script
 # String
-osc-utility messsage --address /channel/1 --port 9000 --string "Hello World"
+osc-utility message --address /channel/1 --port 9000 --string "Hello World"
 
 # Int
-osc-utility messsage --address /channel/1 --port 9000 --int 23
+osc-utility message --address /channel/1 --port 9000 --int 23
 
 # Float
-osc-utility messsage --address /channel/1 --port 9000 --float 23.5
+osc-utility message --address /channel/1 --port 9000 --float 23.5
 
 # Bool
 # Use one of [true, t, 1] for true
 # Use one of [false, f, 0] for false
-osc-utility messsage --address /channel/1 --port 9000 --bool true
+osc-utility message --address /channel/1 --port 9000 --bool true
 ```
 
 OSC Messages can contain multiple values of the same type. Osc-utility allows this by providing the same flag multiple times:
 
 ```shell script
 # Send the values "Hello World", "Foo", and "Bar"
-osc-utility messsage --address /channel/1 --port 9000 --string "Hello World" --string "Foo" --string "Bar"
+osc-utility message --address /channel/1 --port 9000 --string "Hello World" --string "Foo" --string "Bar"
 ```
 
 Naturally it's possible to send values of multiple types at the same time:
 
 ```shell script
-osc-utility messsage --address /channel/1 --port 9000 --string "Foo" --string "Bar" --int 23 --int 5
+osc-utility message --address /channel/1 --port 9000 --string "Foo" --string "Bar" --int 23 --int 5
 ```
 
 
